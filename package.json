@@ -18,7 +18,8 @@
     "start:solution": "npm run -it docker:build && npm run docker:run",
     "test": "jest",
     "test:solution": "npm run docker:build && npm run docker:test",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "dev": "nodemon src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -26,11 +27,12 @@
   "dependencies": {
     "cors": "^2.8.5",
     "cross-conf-env": "^1.2.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "jest": "^26.4.2",
-     "nodemon": "^2.0.4",
+    "nodemon": "^2.0.4",
     "supertest": "^5.0.0"
   }
 }
